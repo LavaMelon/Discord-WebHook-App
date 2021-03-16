@@ -1,0 +1,139 @@
+body
+{
+	background-image: url("./bzz.png");
+	/* Zdjęcie : https://discord.com/ */
+	color: #ffffff;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;	
+	background-color:rgba(127,127,127,0.4);
+	border-left: 5px solid #000000;
+	border-right: 5px solid #000000;
+}
+.banner
+{
+	padding-left: 236px;
+	padding-right: 236px;
+	opacity: 0.8;
+	width: 728px;
+	background-color: #545454;
+}
+
+.cale
+{
+	height: calc(100vh - 90px);
+	font-family: sans-serif;
+	padding: 20px;
+	font-size: 30px;
+	color:black;
+}
+
+.pole
+{
+	resize: none;
+	display:block;
+	width:475px;
+	height:20px;
+	padding:20px;
+	border:10px solid #000000;
+	background-color: rgba(0,0,0,0.4);
+	font-size:30px;
+	text-align:center;
+	color:#808080;
+	margin-left:auto;
+	cursor:pointer;
+	margin-right:auto;
+	outline:none;
+	float: left;
+}
+.pole:hover,.pole:focus
+{
+	border-color:#404040;
+}
+.pole2
+{
+	margin-left:auto;
+	margin-right:auto;
+	float:left;
+	padding:20px;
+}
+.send
+{
+	padding:15px;
+	background-color: rgba(0,0,0,0.4);
+	text-align:center;
+	width:535px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#808080;
+	outline:none;
+	height:80px;
+	font-size:30px;
+	cursor:pointer;
+	border: 10px solid #000000;
+	appearance:none;
+}
+.send:hover,.send:focus
+{
+	border-color:#404040;
+}
+
+#kliknij
+{
+	padding:15px;
+	background-color: rgba(127,127,127,0.1);
+	text-align:center;
+	width:535px;
+	margin-left:35%;
+	margin-top:350px;
+	color:#ffffff;
+	outline:none;
+	height:80px;
+	font-size:30px;
+	cursor:pointer;
+	border: 10px solid #000000;
+	appearance:none;
+}
+
+
+#cmd,#cmd2
+{
+	float: left;
+	border: 10px solid #000000;
+	margin: 20px;
+	color:#ffffff;
+	background-color: rgba(32,32,32,0.4);
+	height: 100px;
+	padding: 15px;
+	text-align:center;
+	width: 485px;
+	display:inline-block;
+}
+
+.footer
+{
+	clear: both;
+	background-color: rgba(0,0,0,0.6);
+	color: #ffffff;
+	padding: 25px;
+	margin: 0px;
+	bottom: 0px;
+	position:absolute;
+	outline:none;
+	width: 1150px;
+	margin-left:-20px;
+	text-align: center;
+	bottom:0px;
+}
+
+#cmd2
+{
+	width:100px;
+}
