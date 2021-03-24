@@ -5,6 +5,13 @@ var wazping ="";
 var skladnia ="";
 var tresc2 ="";
 var linkdobota ="";
+var cooldown=true;
+
+document.addEventListener("keypress", function(event) {
+  if (event.keyCode == 13) {
+    enter();
+  }
+});
 
 function f1()
 {
@@ -23,15 +30,17 @@ function f1()
 	enter();
 }
 //enter
-function c() {
-	document.getElementById("sendz").innerHTML="<input class=\"send\" id=\"click\" type=\"submit\" value=\"Wyślij\" onclick=\"f1()\" style=\"float:left;\"/>";
-}
 function enter()
 {	
-
-
+	
+	if (cooldown)
+	{
+		
+		cooldown = false;
 	document.getElementById("sendz").innerHTML="<input class=\"send\" style=\"cursor:auto;\" id=\"click\" type=\"submit\" value=\"Poczekaj, aby uniknąć spamu\" style=\"float:left;\"/>";
-	setTimeout(function(){c();}, 1000);
+	
+	setTimeout(function(){document.getElementById("sendz").innerHTML="<input class=\"send\" id=\"click\" type=\"submit\" value=\"Wyślij\" onclick=\"f1()\" style=\"float:left;\"/>";}, 1000);
+	setTimeout(function(){cooldown = true;}, 1000);
 	
 	if(tresc && linkacz.includes("https://discord.com/api/webhooks"))
 	{
@@ -67,5 +76,6 @@ function enter()
 		/*<img src=\"x.gif\">*/
 		document.getElementById("cmd").innerHTML = "Wykryto błąd, link albo treść nie są poprawne!";
 		document.getElementById("cmd2").innerHTML = "<img src=\"x.gif\">";
+	}
 	}
 }
