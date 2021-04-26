@@ -6,6 +6,13 @@ var skladnia ="";
 var tresc2 ="";
 var linkdobota ="";
 var cooldown=true;
+var X = '<svg id="x" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\n<rect width="100" height="100" id="bg1" fill="rgba(0,0,0,0.6)"/>\n<rect id="rec3" x="8" y="22.1421" width="20" height="100" rx="10" transform="rotate(-45 8 22.1421)" fill="#FF0000"/>\n<rect id="rec4" x="22.1421" y="92.8528" width="20" height="100" rx="10" transform="rotate(-135 22.1421 92.8528)" fill="#FF0000"/>\n</svg>'
+var V = '<svg id="v" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">\n<rect width="100" height="100" id="bg2" fill="rgba(0,0,0,0.6)"/>\n<rect id="rec1" x="50.1421" y="97.7956" width="20" height="50" rx="10" transform="rotate(-135 50.1421 97.7956)" fill="#00FF00"/>\n<rect id="rec2" x="10" y="13" width="20" height="90" rx="10" transform="rotate(-22.5 10 13.6537)" fill="#00FF00"/>\n</svg>'
+var vau=true;
+setTimeout(() => {
+	document.getElementById("cmd2").innerHTML = V;
+}, 250);
+
 
 document.addEventListener("keypress", function(event) {
   if (event.keyCode == 13) {
@@ -63,19 +70,22 @@ function enter()
 	tresc2 = "";
 	
 	document.getElementById("cmd").innerHTML = "Jeżeli link do bota jest poprawny, to wszystko działa!";
-	document.getElementById("cmd2").innerHTML = "<img src=\"v.gif\">";
+	if (!vau) document.getElementById("cmd2").innerHTML = V;
+	vau = true;
 	
-		} else {
-		/*<img src=\"v.gif\">*/
-		/*<img src=\"x.gif\">*/
-		document.getElementById("cmd").innerHTML = "Wykryto błąd, link albo treść nie są poprawne!";
-		document.getElementById("cmd2").innerHTML = "<img src=\"x.gif\">";
-	}
 	} else {
 		/*<img src=\"v.gif\">*/
 		/*<img src=\"x.gif\">*/
 		document.getElementById("cmd").innerHTML = "Wykryto błąd, link albo treść nie są poprawne!";
-		document.getElementById("cmd2").innerHTML = "<img src=\"x.gif\">";
+		if (vau) document.getElementById("cmd2").innerHTML = X;
+		vau = false;
+	}
+	} else {
+		/*<img src=\"x.gif\">*/
+		/*<img src=\"x.gif\">*/
+		document.getElementById("cmd").innerHTML = "Wykryto błąd, link albo treść nie są poprawne!";
+		if (vau) document.getElementById("cmd2").innerHTML = X;
+		vau = false;
 	}
 	}
 }

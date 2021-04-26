@@ -1,13 +1,9 @@
 body
 {
 	background-image: url("./bzz.png");
-	/*
-	Zdjęcie :
-	https://www.reddit.com/r/discordapp/comments/86fici/i_like_the_background_on_the_new_login_screen_so/
-	*/
 	color: #ffffff;
-	overflow-y: hidden;
-	overflow-x: hidden;
+	/* overflow-y: hidden;
+	overflow-x: hidden; */
 	margin: 0px;
 	padding: 0px;
 }
@@ -31,7 +27,7 @@ body
 
 .cale
 {
-	height: calc(100vh - 90px);
+	height: calc(100vh - 134px);
 	font-family: sans-serif;
 	padding: 20px;
 	font-size: 30px;
@@ -43,11 +39,12 @@ body
 	resize: none;
 	display:block;
 	width:475px;
-	height:20px;
+	height:40px;
+	z-index: 2;
 	padding:20px;
 	border:10px solid #000000;
 	background-color: rgba(0,0,0,0.4);
-	font-size:30px;
+	font-size:32px;
 	text-align:center;
 	color:#ffffff;
 	margin-left:auto;
@@ -63,6 +60,8 @@ body
 .pole2
 {
 	margin-left:auto;
+
+	
 	margin-right:auto;
 	float:left;
 	padding:20px;
@@ -77,8 +76,8 @@ body
 	margin-right:auto;
 	color:#ffffff;
 	outline:none;
-	height:80px;
-	font-size:30px;
+	height:100px;
+	font-size:32px;
 	cursor:pointer;
 	border: 10px solid #000000;
 	appearance:none;
@@ -105,6 +104,85 @@ body
 	appearance:none;
 }
 
+#rec4
+{
+	opacity: 0;
+	animation: recx 0.25s ease 0.25s forwards;
+}
+
+#rec1
+{
+	opacity: 0;
+	animation: recv1 0.25s ease 0.40s forwards;
+}
+
+#rec2
+{
+	opacity: 0;
+	animation: recv2 0.25s ease 0.25s forwards;
+}
+
+#bg1,#bg2
+{
+	animation: faded 1s ease forwards;
+}
+#rec3
+{
+	opacity: 0;
+	animation: recx 0.25s ease 0.5s forwards;
+}
+
+@keyframes faded {
+	from
+		{
+			opacity: 1;
+			fill: rgba(0,0,0,0);
+		}	
+	to
+		{
+			opacity: 1;
+			fill: rgba(0,0,0,1);
+		}
+}
+
+@keyframes recv1 {
+	from
+		{
+			opacity: 1;
+			height: 20px;
+		}	
+	to
+		{
+			height: 50px;
+			opacity: 1;
+		}
+}
+
+@keyframes recv2 {
+	from
+		{
+			opacity: 1;
+			height: 20px;
+		}	
+	to
+		{
+			opacity: 1;
+			height: 90px;
+		}
+}
+
+@keyframes recx {
+	from
+		{
+			opacity: 1;
+			height: 20px;
+		}	
+	to
+		{
+			opacity: 1;
+			height: 100px;
+		}
+}
 
 #cmd,#cmd2
 {
@@ -112,28 +190,12 @@ body
 	border: 10px solid #000000;
 	margin: 20px;
 	color:#ffffff;
+	font-size:40px;
 	background-color: rgba(32,32,32,0.4);
 	height: 100px;
 	padding: 15px;
 	text-align:center;
 	width: 485px;
-	display:inline-block;
-}
-
-.footer
-{
-	clear: both;
-	background-color: rgba(0,0,0,0.6);
-	color: #ffffff;
-	padding: 25px;
-	margin: 0px;
-	bottom: 0px;
-	position:absolute;
-	outline:none;
-	width: 1150px;
-	margin-left:-20px;
-	text-align: center;
-	bottom:0px;
 }
 
 #cmd2
