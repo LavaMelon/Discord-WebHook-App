@@ -9,7 +9,7 @@ var cooldown=true;
 
 document.addEventListener("keypress", function(event) {
   if (event.keyCode == 13) {
-    enter();
+    f1();
   }
 });
 
