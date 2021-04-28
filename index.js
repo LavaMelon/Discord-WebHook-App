@@ -12,9 +12,9 @@ var X = `<svg id="x" width="100" height="100" viewBox="0 0 100 100" fill="none" 
 <rect id="rec4" x="22.1421" y="92.8528" width="20" height="100" rx="10" transform="rotate(-135 22.1421 92.8528)" fill="#FF0000"/>
 </svg>`
 var V = `<svg id="v" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="100" height="100" id="bg2" fill="rgba(0,0,0,0.6)"/>
-<rect id="rec1" x="50.1421" y="97.7956" width="20" height="50" rx="10" transform="rotate(-135 50.1421 97.7956)" fill="#00FF00"/>
-<rect id="rec2" x="10" y="13" width="20" height="90" rx="10" transform="rotate(-22.5 10 13.6537)" fill="#00FF00"/>
+<rect id="bg2" width="100" height="100" fill="black"/>
+<rect id="rec1" width="20" height="50" rx="10" transform="matrix(-0.707107 0.707107 0.707107 0.707107 24.1421 48.2981)" fill="#00FF00"/>
+<rect id="rec2" width="20" height="90" rx="10" transform="matrix(0.858464 0.512874 0.512874 -0.858464 33 87.2618)" fill="#00FF00"/>
 </svg>`
 var I = `<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="100" height="100" id="bg3" fill="black"/>
