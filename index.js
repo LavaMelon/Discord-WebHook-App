@@ -37,6 +37,9 @@ document.addEventListener("keypress", function(event) {
 
 function f4()
 {
+	f2();
+	f2();
+	console.log("Dane wczytane...")
 	document.getElementById("Nick").value=dane.nick;
 	document.getElementById("Tresc").value=dane.tresc;
 	document.getElementById("Link").value=dane.link;
@@ -47,7 +50,7 @@ function f3()
 {
 	pob=false;
 	f1();
-	document.getElementById("cmd4").value=`dane={"nick":"${dane.nick}","tresc":"${dane.tresc}","link":"${dane.link}","tts":${dane.tts},"avatar":"${dane.avatar}"}; f2(); f2(); f4();`;
+	document.getElementById("cmd4").value=`dane={"nick":"${dane.nick}","tresc":"${dane.tresc}","link":"${dane.link}","tts":${dane.tts},"avatar":"${dane.avatar}"};f4();`;
 	document.getElementById("cmd4").select();
 	document.getElementById("cmd4").setSelectionRange(0, 99999);
 	document.execCommand("copy");
@@ -58,11 +61,11 @@ function f2()
 	if (dane.tts)
 	{
 		document.getElementById("Tts").style="background-color: rgba(255,0,0,0.4);";
-		console.log("tru-fls")
+		
 		dane.tts = false;
 	}else{
 		document.getElementById("Tts").style="background-color: rgba(0,255,0,0.4);";
-		console.log("fls-tru")
+		
 		dane.tts = true;
 	}
 }
