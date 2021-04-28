@@ -35,11 +35,19 @@ document.addEventListener("keypress", function(event) {
   }
 });
 
+function f4()
+{
+	document.getElementById("Nick").value=dane.nick;
+	document.getElementById("Tresc").value=dane.tresc;
+	document.getElementById("Link").value=dane.link;
+	document.getElementById("Avatar").value=dane.avatar;
+}
+
 function f3()
 {
 	pob=false;
 	f1();
-	document.getElementById("cmd4").value=`dane={"nick":"${dane.nick}","tresc":"${dane.tresc}","link":"${dane.link}","tts":${dane.tts},"avatar":"${dane.avatar}"}; f2(); f2();`;
+	document.getElementById("cmd4").value=`dane={"nick":"${dane.nick}","tresc":"${dane.tresc}","link":"${dane.link}","tts":${dane.tts},"avatar":"${dane.avatar}"}; f2(); f2(); f4();`;
 	document.getElementById("cmd4").select();
 	document.getElementById("cmd4").setSelectionRange(0, 99999);
 	document.execCommand("copy");
