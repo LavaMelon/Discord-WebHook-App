@@ -21,7 +21,7 @@
 			</a>
 		
 				<div class="cale">
-							<div class="tekst">Discord WebHook App to aplikacja pozwalająca wysyłać wiadomości do discorda przy użyciu WebHooków. Nick może mieć max 32 znaki a wiadomość 500.<br/><br/>* - Należy wypełnić</div>
+							<div class="tekst">Discord WebHook App to aplikacja pozwalająca wysyłać wiadomości do discorda przy użyciu WebHooków. Nick może mieć max 32 znaki a wiadomość 500. Jeżeli zapisałeś jakieś ustawienia, i chcesz je załadować, to wciśnij [Ctrl]+[Shift]+[I] a następnie wejdź w "Console" i wklej twoje ustawienia.<a target="_blank" href="./instrukcja.txt" download> [KLIKNIJ ABY ZOBACZYĆ INSTRUKCJE]</a><br/><br/>* - Należy wypełnić</div>
 		
 			<div class="pole2">
 					
@@ -34,15 +34,15 @@
 					
 			</div><div class="pole2">
 					
-					<input class="pole"value="" id="Linkk" placeholder="Link do Bota*"></input>
+					<input class="pole"value="" id="Link" placeholder="Link do Bota*"></input>
 					
 			</div><div class="pole2">
 					
-					<input class="pole" id="tts" placeholder="TTS (wpisz 'Tak', jeżeli chcesz)"></input>
+					<div class="pole" id="Tts" onclick="f2();">TTS</div>
 					
 			</div><div class="pole2">
 					
-					<input class="pole" id="ava" placeholder="Avatar (puste = domyślny avatar)"></input>
+					<input class="pole" id="Avatar" placeholder="Avatar (puste = domyślny avatar)"></input>
 					
 			</div>
 
@@ -52,6 +52,8 @@
 
 			<div id="cmd">STATUS</div>
 			<div id="cmd2"></div>
+			<div id="cmd3" onclick="f3();">Kliknij, aby zapisać ustawienia do schowka</div>
+			<input id="cmd4" value="bob"/>
 			<!--By Lava_Melon#9972-->
 		
 		</div>

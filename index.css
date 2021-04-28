@@ -7,6 +7,11 @@ body
 	margin: 0px;
 	padding: 0px;
 }
+a:link,a:visited
+{
+	color: white;
+	text-decoration: none;
+}
 .container
 {
 	margin-left: auto;
@@ -30,7 +35,7 @@ body
 	height: calc(100vh - 134px);
 	font-family: sans-serif;
 	padding: 20px;
-	font-size: 30px;
+	font-size: 25px;
 	color:white;
 }
 
@@ -47,21 +52,20 @@ body
 	font-size:32px;
 	text-align:center;
 	color:#ffffff;
+	transition: 0.5s;
 	margin-left:auto;
 	cursor:pointer;
 	margin-right:auto;
 	outline:none;
 	float: left;
 }
-.pole:hover,.pole:focus
+.pole:hover,.pole:focus,.send:hover,.send:focus
 {
-	border-color:#404040;
+	border-color:#0080e0;
 }
 .pole2
 {
 	margin-left:auto;
-
-	
 	margin-right:auto;
 	float:left;
 	padding:20px;
@@ -69,6 +73,7 @@ body
 .send
 {
 	padding:15px;
+	transition: 0.5s;
 	background-color: rgba(0,0,0,0.4);
 	text-align:center;
 	width:535px;
@@ -81,10 +86,6 @@ body
 	cursor:pointer;
 	border: 10px solid #000000;
 	appearance:none;
-}
-.send:hover,.send:focus
-{
-	border-color:#404040;
 }
 
 #kliknij
@@ -104,6 +105,34 @@ body
 	appearance:none;
 }
 
+#cmd,#cmd2,#cmd3
+{
+	float: left;
+	border: 10px solid #000000;
+	margin: 20px;
+	color:#ffffff;
+	font-size:40px;
+	background-color: rgba(32,32,32,0.4);
+	height: 100px;
+	padding: 15px;
+	text-align:center;
+	width: 485px;
+}
+
+#cmd2
+{
+	width:100px;
+}
+#cmd3
+{
+	cursor: pointer;
+	font-size:30px;
+	width:295px;
+}
+#cmd4{font-size: 10px;opacity: 0;}
+
+/* ANIMACJE */
+
 #rec4
 {
 	opacity: 0;
@@ -122,7 +151,7 @@ body
 	animation: recv2 0.25s ease 0.25s forwards;
 }
 
-#bg1,#bg2
+#bg1,#bg2,#bg3
 {
 	animation: faded 1s ease forwards;
 }
@@ -131,74 +160,28 @@ body
 	opacity: 0;
 	animation: recx 0.25s ease 0.5s forwards;
 }
-
-@keyframes faded {
-	from
-		{
-			opacity: 1;
-			fill: rgba(0,0,0,0);
-		}	
-	to
-		{
-			opacity: 1;
-			fill: rgba(0,0,0,1);
-		}
-}
-
-@keyframes recv1 {
-	from
-		{
-			opacity: 1;
-			height: 20px;
-		}	
-	to
-		{
-			height: 50px;
-			opacity: 1;
-		}
-}
-
-@keyframes recv2 {
-	from
-		{
-			opacity: 1;
-			height: 20px;
-		}	
-	to
-		{
-			opacity: 1;
-			height: 90px;
-		}
-}
-
-@keyframes recx {
-	from
-		{
-			opacity: 1;
-			height: 20px;
-		}	
-	to
-		{
-			opacity: 1;
-			height: 100px;
-		}
-}
-
-#cmd,#cmd2
+#rec5
 {
-	float: left;
-	border: 10px solid #000000;
-	margin: 20px;
-	color:#ffffff;
-	font-size:40px;
-	background-color: rgba(32,32,32,0.4);
-	height: 100px;
-	padding: 15px;
-	text-align:center;
-	width: 485px;
+	opacity: 0;
+	animation: rec5 0.75s ease 0.25s forwards;
 }
 
-#cmd2
-{
-	width:100px;
-}
+@keyframes faded {0%{opacity: 0;fill: rgba(0,0,0,0);}100%{opacity: 1;fill: rgba(0,0,0,1);}}
+
+@keyframes recv1 {0%{opacity: 0;height: 20px;}100%{height: 50px;opacity: 1;}}
+@keyframes recv2 {0%{opacity: 0;height: 20px;}100%{opacity: 1;height: 90px;}}
+@keyframes rec5 {
+	0%{
+		opacity: 0;
+		y:30;
+		x:40;
+		height: 40px;
+		width: 20px;
+	}100%{
+		y:40;
+		opacity: 1;
+		x:10;
+		height: 20px;
+		width: 80px;
+	}}
+@keyframes recx {0%{opacity: 0;height: 20px;}100%{opacity: 1;	height: 100px;}}

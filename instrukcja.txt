@@ -1,0 +1,35 @@
+Discord WebHook App to aplikacja pozwalająca wysyłać wiadomości do discorda przy użyciu WebHooków.
+
+Nick:
+Może mieć max 32 znaki
+
+Wiadomość:
+Może mieć 500 znaków (aby uniknąć spamu).
+
+Avatar:
+Powinnien zaczynać się od "https://cdn.discordapp.com/avatars/", avatary można zdobyć będąc na discordzie:
+
+kliknij [Ctrl]+[Shift]+[I]
+kliknij [Ctrl]+[Shift]+[C]
+kliknij w avatar użytkownika przy wiadomości
+
+w osobnym oknie powinno pojawić się coś w stylu:
+
+<img src="https://cdn.discordapp.com/avatars/*****/*****.webp?size=128" aria-hidden="true" class="avatar-1BDn8e clickable-1bVtEA" alt=" " data-user-id="*****">
+
+skopiuj to co znajduje się w "src", czyli "https://cdn.discordapp.com/avatars/*****/*****.webp?size=128", i oto jest poprawny link to avatara.
+
+
+Link do bota powinnien się zaczynać tak: "https://discord.com/api/webhooks"
+
+Należy uzupełnić link do bota i treść
+
+Duże czerwone pole służy do tego, czy wiadomość ma być przeczytana dla użytkowników na danym kanale tekstowym (TTS = Text To Speak)
+
+Klikając w Zapis, w clipboardzie (schowku) pojawia nam się skrypt.
+
+Jeżeli zapisałeś jakieś ustawienia, i chcesz je załadować, to wciśnij [Ctrl]+[Shift]+[I] a następnie wejdź w "Console", wklej twoje ustawienia i kliknij enter.
+
+Klikając w logo na góże strony, otworzy się mój profil na github'ie.
+
+Autor Strony : Lava_Melon#9972 z ID 530025908057276417
