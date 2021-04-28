@@ -142,13 +142,13 @@ a:link,a:visited
 #rec1
 {
 	opacity: 0;
-	animation: recv1 0.25s ease 0.40s forwards;
+	animation: recv1 0.25s ease 0.20s forwards;
 }
 
 #rec2
 {
 	opacity: 0;
-	animation: recv2 0.25s ease 0.25s forwards;
+	animation: recv2 0.25s ease 0.45s forwards;
 }
 
 #bg1,#bg2,#bg3
@@ -166,13 +166,13 @@ a:link,a:visited
 	animation: rec5 0.75s ease 0.25s forwards;
 }
 
-@keyframes faded {0%{opacity: 0;fill: rgba(0,0,0,0);}100%{opacity: 1;fill: rgba(0,0,0,1);}}
+@keyframes faded {0%{opacity: 1;fill: rgba(0,0,0,0);}100%{opacity: 1;fill: rgba(0,0,0,1);}}
 
-@keyframes recv1 {0%{opacity: 0;height: 20px;}100%{height: 50px;opacity: 1;}}
-@keyframes recv2 {0%{opacity: 0;height: 20px;}100%{opacity: 1;height: 90px;}}
+@keyframes recv1 {0%{opacity: 1;height: 20px;}100%{height: 50px;opacity: 1;}}
+@keyframes recv2 {0%{opacity: 1;height: 20px;}100%{opacity: 1;height: 90px;}}
 @keyframes rec5 {
 	0%{
-		opacity: 0;
+		opacity: 1;
 		y:30;
 		x:40;
 		height: 40px;
@@ -184,4 +184,4 @@ a:link,a:visited
 		height: 20px;
 		width: 80px;
 	}}
-@keyframes recx {0%{opacity: 0;height: 20px;}100%{opacity: 1;	height: 100px;}}
+@keyframes recx {0%{opacity: 1;height: 20px;}100%{opacity: 1;	height: 100px;}}
